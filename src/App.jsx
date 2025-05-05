@@ -11,9 +11,9 @@ function App() {
   const [comparisonCity, setComparisonCity] = useState(null);
   const [isComparing, setIsComparing] = useState(false);
   const [favoriteCities, setFavoriteCities] = useState([]);
-  const [mode, setMode] = useState('single'); // 'single' or 'compare'
+  const [mode, setMode] = useState('single'); 
 
-  // Load favorite cities from localStorage on initial render
+  
   useEffect(() => {
     const savedFavorites = localStorage.getItem('favoriteCities');
     if (savedFavorites) {
@@ -21,7 +21,7 @@ function App() {
     }
   }, []);
 
-  // Save favorites to localStorage whenever they change
+  
   useEffect(() => {
     localStorage.setItem('favoriteCities', JSON.stringify(favoriteCities));
   }, [favoriteCities]);
@@ -37,7 +37,7 @@ function App() {
         setComparisonCity(cityData);
         setIsComparing(true);
       } else {
-        // If both cities are already set, replace the first one
+        
         setCurrentCity(cityData);
       }
     }

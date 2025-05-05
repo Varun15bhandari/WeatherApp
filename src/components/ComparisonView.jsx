@@ -7,7 +7,7 @@ const ComparisonView = ({ cityOne, cityTwo, onAddToFavorites }) => {
     return <div className="comparison-view loading">Loading comparison...</div>;
   }
 
-  // Calculate temperature difference
+  
   const tempDiff = Math.round(cityOne.main.temp - cityTwo.main.temp);
   const humidityDiff = cityOne.main.humidity - cityTwo.main.humidity;
 

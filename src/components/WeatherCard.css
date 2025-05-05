@@ -1,4 +1,4 @@
-/* WeatherCard.css */
+
 
 .weather-card {
     background: linear-gradient(to bottom right, #4a90e2, #63b3ed);
@@ -112,7 +112,7 @@
     font-weight: 600;
   }
   
-  /* Responsive adjustments */
+  
   @media (max-width: 768px) {
     .weather-card {
       padding: 15px;

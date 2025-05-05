@@ -8,13 +8,13 @@ const WeatherCard = ({ cityData, onAddToFavorites, isComparison = false }) => {
 
   const { name, main, weather, sys } = cityData;
   
-  // Format temperature to whole number
+  
   const temperature = Math.round(main.temp);
   
-  // Get appropriate weather icon
+  
   const weatherIcon = `http://openweathermap.org/img/wn/${weather[0].icon}@2x.png`;
   
-  // Weather condition description with first letter capitalized
+  
   const weatherDescription = weather[0].description
     .split(' ')
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))

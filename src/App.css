@@ -1,6 +1,6 @@
-/* App.css - Main styling for the weather application */
 
-/* Base styles and CSS reset */
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
 }
 
-/* Header styles */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -57,7 +57,7 @@ button {
   background-color: #2980b9;
 }
 
-/* Main content area */
+
 main {
   flex: 1;
   display: flex;
@@ -88,7 +88,7 @@ main {
   margin: 20px 0;
 }
 
-/* Footer styles */
+
 footer {
   text-align: center;
   margin-top: 30px;
@@ -98,7 +98,7 @@ footer {
   color: #7f8c8d;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;

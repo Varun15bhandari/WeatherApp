@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './SearchBar.css';
 
-const API_KEY = 'd1cbd2ec48115631dce49ceb5a1b7d84'; // Replace with your API key
+const API_KEY = 'd1cbd2ec48115631dce49ceb5a1b7d84'; 
 
 const SearchBar = ({ onCitySelect }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -18,7 +18,7 @@ const SearchBar = ({ onCitySelect }) => {
     setError(null);
     
     try {
-      // First get coordinates by city name
+      
       const geoResponse = await fetch(
         `https://api.openweathermap.org/geo/1.0/direct?q=${searchTerm}&limit=5&appid=${API_KEY}`
       );
@@ -49,7 +49,7 @@ const SearchBar = ({ onCitySelect }) => {
     setIsLoading(true);
     
     try {
-      // Get current weather data for selected city
+      
       const weatherResponse = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?lat=${city.lat}&lon=${city.lon}&units=metric&appid=${API_KEY}`
       );
@@ -60,10 +60,10 @@ const SearchBar = ({ onCitySelect }) => {
       
       const weatherData = await weatherResponse.json();
       
-      // Pass the weather data to parent component
+      
       onCitySelect(weatherData);
       
-      // Clear search results but keep the search term
+      
       setSearchResults([]);
     } catch (err) {
       setError('Failed to load weather data. Please try again.');

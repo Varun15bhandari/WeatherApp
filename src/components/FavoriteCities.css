@@ -1,4 +1,4 @@
-/* FavoriteCities.css */
+
 
 .favorites-container {
     margin: 30px 0;
@@ -70,7 +70,7 @@
     opacity: 1;
   }
   
-  /* Responsive adjustments */
+  
   @media (max-width: 768px) {
     .favorites-list {
       grid-template-columns: 1fr;
